@@ -1,0 +1,238 @@
+/* ----fonts --------*/
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,500&family=Gulzar&family=Poppins:wght@400;500&display=swap');
+
+
+body {
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+/*--------------------- Heading style------------------ */
+.h-container {
+    border: 1px solid #161616;
+    background: #161616;
+    border-radius: 30px;
+    display: flex;
+    padding-left: 106px;
+    padding-top: 111px;
+    padding-right: 80px;
+    margin-left: 140px;
+    margin-right: 110px;
+    margin-top: 50px;
+
+}
+
+
+.heading-title h1 {
+
+    font-weight: 700;
+    font-size: 70px;
+    color: #FFFFFF;
+}
+
+.heading-title h2 {
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.heading-title {
+    width: 100%;
+}
+
+.heading-image img {
+    width: 110%;
+    margin-right: 79px;
+}
+
+.live-button {
+    border: 1px solid red;
+    background: #DD0000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* ------------------for button animation-------------------- */
+.live-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.live-button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.live-button:hover span {
+    padding-right: 25px;
+}
+
+.live-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* ---------------------section style----------------------- */
+.m-container {
+    display: flex;
+
+}
+
+.options {
+    margin-top: 140px;
+    border: 1px solid #171717;
+    background: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 252px;
+    height: 252px;
+    margin-left: 140px;
+    margin-right: 24px;
+}
+
+.options .button-1 {
+    width: 252px;
+    height: 64px;
+    left: 170px;
+    top: 950px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 500px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.options .button-2 {
+    width: 252px;
+    height: 64px;
+    left: 170px;
+    top: 950px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.options .button-3 {
+    width: 252px;
+    height: 64px;
+    left: 170px;
+    top: 950px;
+    background: #DD0000;
+    border-radius: 10px;
+    font-weight: 500px;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 17px;
+}
+
+/* ---------------article style ------------*/
+.a-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 140px;
+}
+
+.blog {
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    width: 312px;
+    height: 362px;
+    margin-right: 24px;
+    margin-bottom: 35px;
+}
+
+
+.time-comment {
+    display: flex;
+    gap: 30px;
+}
+
+.time-comment span {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+/* logo style */
+.fa-clock {
+    width: 24px;
+    height: 24px;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.fa-message {
+    width: 24px;
+    height: 24px;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+}
+
+/* ------------------------footer style----------------- */
+.foot {
+    background-color: #161616;
+    width: 1600px;
+    height: 444px;
+}
+
+.foot h3 {
+    padding-top: 130px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+hr {
+    width: 1320px;
+    height: 0px;
+    left: 140px;
+    top: 2330px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.f-option {
+    font-weight: 500;
+    font-size: 16px;
+    color: #B9B9B9;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.fa-linkedin {
+    margin-left: -85px;
+}
+
+/*--------Media Queries--------*/
+
+/*-------Mobile view--------*/
+@media only screen and (max-device-width: 688px) {
+    .a-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
